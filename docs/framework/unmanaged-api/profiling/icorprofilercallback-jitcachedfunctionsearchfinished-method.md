@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3c325c82-cddd-4b00-b3da-e450c36abf62
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::JITCachedFunctionSearchFinished Method
 Notifies the profiler that a search has finished for a function that was compiled previously using the Native Image Generator (NGen.exe).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT JITCachedFunctionSearchFinished(  
     [in] FunctionID        functionId,  
     [in] COR_PRF_JIT_CACHE result);  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7d7fa796-0dc6-4ee8-9d56-40166246d91d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess5::EnumerateHandles Method
 Gets an enumerator for object handles in a process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateHandles(     [in] CorGCReferenceType types,  
     [out] ICorDebugGCReferenceEnum **ppEnum);  
 ```  

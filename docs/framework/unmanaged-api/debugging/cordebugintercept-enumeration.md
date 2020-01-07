@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 3d5b642e-7ef2-428b-a5ae-509c35ed461a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugIntercept Enumeration
 Indicates the types of code that can be intercepted (that is, stepped into).  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugIntercept {  
     INTERCEPT_NONE                = 0x0,  
     INTERCEPT_CLASS_INIT          = 0x01,  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 532da6ee-7f0a-401b-a61e-fc47ec235d2e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetCodeInfo2 Method
 Gets the extents of native code associated with the specified `FunctionID`.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCodeInfo2(  
     [in]  FunctionID functionID,  
     [in]  ULONG32 cCodeInfos,  

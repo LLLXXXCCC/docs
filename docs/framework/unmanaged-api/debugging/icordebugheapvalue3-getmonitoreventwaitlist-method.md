@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 035a9035-ac66-4953-b48a-99652b42b7fe
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugHeapValue3::GetMonitorEventWaitList Method
 Provides an ordered list of threads that are queued on the event that is associated with a monitor lock.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMonitorEventWaitList (  
     [out] ICorDebugThreadEnum **ppThreadEnum  
 );  

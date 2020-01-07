@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 22d2e339-f174-40b5-a478-0b744501566f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataEnumMemoryRegions::EnumMemoryRegions Method
 Enumerates specified areas of memory.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMemoryRegions (  
     [in] ICLRDataEnumMemoryRegionsCallback  *callback,  
     [in] ULONG32                            miniDumpFlags,  

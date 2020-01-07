@@ -15,7 +15,7 @@ You must enable several ports or programs in the firewall so that the Windows Co
  If you are unsure of which procedure to use, choose the first option. If you are running a firewall from another vendor, you might need to make similar changes.  
   
 > [!IMPORTANT]
->  Changing your firewall configuration affects your security. It is recommended that you record the changes you make and remove them when you are finished working with the samples.  
+> Changing your firewall configuration affects your security. It is recommended that you record the changes you make and remove them when you are finished working with the samples.  
   
 ### To enable samples programs in advance  
   
@@ -24,13 +24,13 @@ You must enable several ports or programs in the firewall so that the Windows Co
 2. Click **Start**, click **Run**, and type `firewall.cpl`. This opens the **Windows Firewall Control Panel** applet.  
   
     > [!NOTE]
-    >  You must have permission to change the Firewall settings to run samples that require the ability to communicate through the Windows Firewall. If some firewall settings are unavailable and your computer is connected to a domain, your system administrator might be controlling these settings through Group Policy.  
+    > You must have permission to change the Firewall settings to run samples that require the ability to communicate through the Windows Firewall. If some firewall settings are unavailable and your computer is connected to a domain, your system administrator might be controlling these settings through Group Policy.  
   
 3. Complete one of the following operating specific steps to allow a program through the Windows Firewall:  
   
     - On Windows 7 or Windows Server 2008 r2, click **Allow a program or feature through Windows Firewall**. Click **Change Settings**, Allow **Another Program…**.  
   
-    - On [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)], click **Allow a program through Windows Firewall**.  
+    - On Windows Vista or Windows Server 2008, click **Allow a program through Windows Firewall**.  
   
 4. On the **Exceptions** tab, click **Add Program**.  
   
@@ -66,7 +66,7 @@ You must enable several ports or programs in the firewall so that the Windows Co
   
     10. Click **Outbound Rules** and repeat steps c to h.  
   
-3. On [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)], follow these steps.  
+3. On Windows Vista or Windows Server 2008, follow these steps.  
   
     1. Click **Allow a program through Windows Firewall**.  
   
@@ -81,4 +81,4 @@ You must enable several ports or programs in the firewall so that the Windows Co
 4. Click **OK** to close the firewall applet.  
   
 > [!NOTE]
->  Remove any firewall exceptions when you are finished working with the samples. To do so, open the **Windows Firewall Control Panel** applet and remove any programs or port entries that were added by the previous procedures.
+> Remove any firewall exceptions when you are finished working with the samples. To do so, open the **Windows Firewall Control Panel** applet and remove any programs or port entries that were added by the previous procedures.

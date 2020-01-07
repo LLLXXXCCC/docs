@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 29746b24-3766-4255-8813-0426c45e73e5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugMDA::GetXML Method
 Gets the full XML stream associated with the managed debugging assistant (MDA) represented by [ICorDebugMDA](../../../../docs/framework/unmanaged-api/debugging/icordebugmda-interface.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetXML (  
     [in] ULONG32   cchName,  
     [out] ULONG32  *pcchName,  

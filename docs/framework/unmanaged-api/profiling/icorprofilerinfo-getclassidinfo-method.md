@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 9e93b99e-5aca-415c-8e37-7f33753b612d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetClassIDInfo Method
 Gets the parent module and the metadata token for the specified class.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassIDInfo(  
     [in]  ClassID   classId,  
     [out] ModuleID  *pModuleId,  

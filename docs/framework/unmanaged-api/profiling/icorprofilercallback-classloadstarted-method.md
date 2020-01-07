@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 9f728de8-45c2-45a5-ac4a-45660bd36ecf
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ClassLoadStarted Method
 Notifies the profiler that a class is being loaded.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ClassLoadStarted(  
     [in] ClassID classId);  
 ```  

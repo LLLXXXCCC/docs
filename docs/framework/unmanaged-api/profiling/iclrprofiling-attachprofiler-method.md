@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 535a6839-c443-405b-a6f4-e2af90725d5b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICLRProfiling::AttachProfiler Method
 Attaches the specified profiler to the specified process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AttachProfiler(  
   [in] DWORD dwProfileeProcessID,  
   [in] DWORD dwMillisecondsMax,                     // optional  

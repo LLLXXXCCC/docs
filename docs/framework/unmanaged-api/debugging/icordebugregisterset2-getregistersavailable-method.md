@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f3ed344b-0d3a-44e8-8000-2a97e0805a2c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRegisterSet2::GetRegistersAvailable Method
 Gets an array of bytes that provides a bitmap of the available registers.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegistersAvailable (  
     [in] ULONG32 numChunks,  
     [out, size_is(numChunks)] BYTE availableRegChunks[]  

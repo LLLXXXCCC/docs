@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b7723f58-c55c-4399-9972-1bbf3b866694
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RuntimeSuspendFinished Method
 Notifies the profiler that the runtime has completed suspension of all runtime threads.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RuntimeSuspendFinished();  
 ```  
   

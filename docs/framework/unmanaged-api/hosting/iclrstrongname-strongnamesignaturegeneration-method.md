@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4cdb1284-947a-4ed4-94c1-c5ff5cdfce56
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::StrongNameSignatureGeneration Method
 Generates a strong name signature for the specified assembly.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameSignatureGeneration (   
     [in]  LPCWSTR   wszFilePath,  
     [in]  LPCWSTR   wszKeyContainer,  

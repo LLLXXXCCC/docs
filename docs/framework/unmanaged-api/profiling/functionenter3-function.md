@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: ef782c53-dae7-4990-b4ad-fddb1e690d4e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # FunctionEnter3 Function
 Notifies the profiler that control is being passed to a function.  
   
 ## Syntax  
   
-```  
+```cpp  
 void __stdcall FunctionEnter3(FunctionOrRemappedID functionOrRemappedID);  
 ```  
   

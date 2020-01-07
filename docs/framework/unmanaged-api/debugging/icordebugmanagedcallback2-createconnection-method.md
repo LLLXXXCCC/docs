@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 49e647be-9d63-4250-9d11-704e2a400d1b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback2::CreateConnection Method
 Notifies the debugger that a new connection has been created.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateConnection (  
     [in] ICorDebugProcess     *pProcess,  
     [in] CONNID               dwConnectionId,  

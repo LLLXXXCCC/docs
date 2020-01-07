@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3dd80fbe-d62d-4d4d-acf8-5b7d0efe607e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ClassLoadFinished Method
 Notifies the profiler that a class has finished loading.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ClassLoadFinished(  
     [in] ClassID classId,  
     [in] HRESULT hrStatus);  

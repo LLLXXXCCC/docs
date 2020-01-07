@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: d9f16439-5a36-4474-8ffd-4f0b2c2bb686
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorGCReferenceType Enumeration
 Identifies the source of an object to be garbage-collected.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     CorHandleStrong = 1,  
     CorHandleStrongPinning = 2,  

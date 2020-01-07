@@ -14,17 +14,15 @@ helpviewer_keywords:
 ms.assetid: 5fb645d9-b818-401c-8c2c-c30d86de58ba
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # LPOVERLAPPED_COMPLETION_ROUTINE Function Pointer
 Points to a function that notifies the host when an overlapped (that is, asynchronous) I/O to a device has completed.  
   
- This function pointer has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function pointer has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef VOID (*LPOVERLAPPED_COMPLETION_ROUTINE) (  
     [in] DWORD  dwErrorCode,  
     [in] DWORD  dwNumberOfBytesTransfered,  

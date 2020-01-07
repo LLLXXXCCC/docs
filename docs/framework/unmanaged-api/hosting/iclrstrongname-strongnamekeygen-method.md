@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ac5c1245-9acf-4271-9c08-3d9b7c670df3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::StrongNameKeyGen Method
 Creates a new public/private key pair for strong name use.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameKeyGen (  
     [in]  LPCWSTR   wszKeyContainer,  
     [in]  DWORD     dwFlags,  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 166b0761-ed80-4ccd-9973-dc20e61bf8fa
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerObjectEnum::GetCount Method
 Gets the total number of frozen objects in the collection.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCount (  
     [out] ULONG   *pcelt  
 );  

@@ -1,7 +1,7 @@
 ---
 title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
-ms.date: 02/08/2019
+ms.date: 11/04/2019
 ---
 # F# code formatting guidelines
 
@@ -92,6 +92,29 @@ let myFun (a: decimal) b c = a + b + c
 
 // Bad
 let myFunBad (a:decimal)(b)c = a + b + c
+```
+
+### Place parameters on a new line for very long member definitions
+
+If you have a very long member definition, place the parameters on new lines and indent them one scope.
+
+```fsharp
+type C() =
+    member _.LongMethodWithLotsOfParameters(
+        aVeryLongType: AVeryLongTypeThatYouNeedToUse
+        aSecondVeryLongType: AVeryLongTypeThatYouNeedToUse
+        aThirdVeryLongType: AVeryLongTypeThatYouNeedToUse) =
+        // ... the body of the method follows
+```
+
+This also applies to constructors:
+
+```fsharp
+type C(
+    aVeryLongType: AVeryLongTypeThatYouNeedToUse
+    aSecondVeryLongType: AVeryLongTypeThatYouNeedToUse
+    aThirdVeryLongType: AVeryLongTypeThatYouNeedToUse) =
+    // ... the body of the class follows
 ```
 
 ### Type annotations
@@ -284,12 +307,13 @@ x ^^^ y // Bitwise xor, also for working with “flags” enumeration
 
 ### Use prefix syntax for generics (`Foo<T>`) in preference to postfix syntax (`T Foo`)
 
-F# inherits both the postfix ML style of naming generic types (for example, `int list`) as well as the prefix .NET style (for example, `list<int>`). Prefer the .NET style, except for four specific types:
+F# inherits both the postfix ML style of naming generic types (for example, `int list`) as well as the prefix .NET style (for example, `list<int>`). Prefer the .NET style, except for five specific types:
 
 1. For F# Lists, use the postfix form: `int list` rather than `list<int>`.
 2. For F# Options, use the postfix form: `int option` rather than `option<int>`.
-3. For F# arrays, use the syntactic name `int[]` rather than `int array` or `array<int>`.
-4. For Reference Cells, use `int ref` rather than `ref<int>` or `Ref<int>`.
+3. For F# Value Options, use the postfix form: `int voption` rather than `voption<int>`.
+4. For F# arrays, use the syntactic name `int[]` rather than `int array` or `array<int>`.
+5. For Reference Cells, use `int ref` rather than `ref<int>` or `Ref<int>`.
 
 For all other types, use the prefix form.
 
@@ -544,6 +568,48 @@ let pascalsTriangle =
 ```
 
 And as with records, declaring the opening and closing brackets on their own line will make moving code around and piping into functions easier.
+
+When generating arrays and lists programmatically, prefer `->` over `do ... yield` when a value is always generated:
+
+```fsharp
+// Preferred
+let squares = [ for x in 1..10 -> x*x ]
+
+// Not preferred
+let squares' = [ for x in 1..10 do yield x*x ]
+```
+
+Older versions of the F# language required specifying `yield` in situations where data may be generated conditionally, or there may be consecutive expressions to be evaluated. Prefer omitting these `yield` keywords unless you must compile with an older F# language version:
+
+```fsharp
+// Preferred
+let daysOfWeek includeWeekend =
+    [
+        "Monday"
+        "Tuesday"
+        "Wednesday"
+        "Thursday"
+        "Friday"
+        if includeWeekend then
+            "Saturday"
+            "Sunday"
+    ]
+
+// Not preferred
+let daysOfWeek' includeWeekend =
+    [
+        yield "Monday"
+        yield "Tuesday"
+        yield "Wednesday"
+        yield "Thursday"
+        yield "Friday"
+        if includeWeekend then
+            yield "Saturday"
+            yield "Sunday"
+    ]
+```
+
+In some cases, `do...yield` may aid in readability. These cases, though subjective, should be taken into consideration.
 
 ## Formatting if expressions
 
@@ -811,7 +877,7 @@ Attributes can also be places on parameters. In this case, place then on the sam
 ```fsharp
 // Defines a class that takes an optional value as input defaulting to false.
 type C() =
-    member __.M([<Optional; DefaultParameterValue(false)>] doSomething: bool)
+    member _.M([<Optional; DefaultParameterValue(false)>] doSomething: bool)
 ```
 
 ### Formatting multiple attributes
@@ -830,14 +896,14 @@ When applied to a parameter, they must be on the same line and separated by a `;
 
 ## Formatting literals
 
-[F# literals](../language-reference/literals.md) using the `Literal` attribute should place the attribute on its own line and use camelCase naming:
+[F# literals](../language-reference/literals.md) using the `Literal` attribute should place the attribute on its own line and use PascalCase naming:
 
 ```fsharp
 [<Literal>]
-let path = __SOURCE_DIRECTORY__ + "/" + __SOURCE_FILE__
+let Path = __SOURCE_DIRECTORY__ + "/" + __SOURCE_FILE__
 
 [<Literal>]
-let myUrl = "www.mywebsitethatiamworkingwith.com"
+let MyUrl = "www.mywebsitethatiamworkingwith.com"
 ```
 
 Avoid placing the attribute on the same line as the value.

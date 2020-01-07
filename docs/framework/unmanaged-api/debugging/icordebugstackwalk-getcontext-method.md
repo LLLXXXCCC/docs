@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 081d1c95-152b-4797-8552-18453eb7b14b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStackWalk::GetContext Method
 Returns the context for the current frame in the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetContext([in]  ULONG32 contextFlags,  
                    [in]  ULONG32 contextBufSize,  
                    [out] ULONG32* contextSize,  

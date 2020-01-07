@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: bca7a5b4-c207-4894-918c-0733926296dd
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo4::EnumThreads Method
 Returns an enumerator that provides methods to sequentially iterate through the collection of all managed threads in the profiled process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumThreads([out]  
             ICorProfilerThreadEnum** ppEnum);  
 ```  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0f63400b-dc1c-48d6-b51a-75c3f7f28e03
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRegisterSet::GetThreadContext Method
 Gets the context of the current thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadContext(  
     [in] ULONG32 contextSize,  
     [in, out, length_is(contextSize),  

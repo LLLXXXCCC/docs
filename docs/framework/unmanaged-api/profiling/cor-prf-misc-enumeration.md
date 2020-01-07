@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 619bb5de-e309-48b6-a3af-32d935a0ff46
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_MISC Enumeration
 Contains constant values that specify special identifiers.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     PROFILER_PARENT_UNKNOWN = 0xFFFFFFFD,  
     PROFILER_GLOBAL_CLASS   = 0xFFFFFFFE,  

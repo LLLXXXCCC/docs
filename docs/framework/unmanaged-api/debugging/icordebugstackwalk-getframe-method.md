@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4083b505-5b59-44fb-8c5d-129db6a96c10
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStackWalk::GetFrame Method
 Gets the current frame in the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFrame([out] ICorDebugFrame ** pFrame);  
 ```  
   

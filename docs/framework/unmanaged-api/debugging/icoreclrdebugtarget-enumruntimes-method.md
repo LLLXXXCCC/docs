@@ -17,15 +17,13 @@ helpviewer_keywords:
 ms.assetid: 316df866-442d-40cc-b049-45e8adcb65d1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICoreClrDebugTarget::EnumRuntimes Method
 Enumerates the common language runtimes (CLRs) in the specified process that is running on a remote computer.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumRuntimes (  
       [in] DWORD       dwInternalProcessID,  
       [out] DWORD*     pcRuntimes,  

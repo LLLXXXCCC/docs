@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 966da50d-5665-4fff-bf7b-1c72bbadd9a4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVariableHome::GetSlotIndex Method
 Gets the managed slot-index of a local variable.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSlotIndex(  
     [out] ULONG32 *pSlotIndex  
 );  

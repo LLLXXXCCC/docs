@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 1f8b59d0-5b72-45b8-ab74-c2b43ffc806e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::StrongNameKeyGenEx Method
 Generates a new public/private key pair with the specified key size, for strong name use.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameKeyGenEx (  
     [in]  LPCWSTR   wszKeyContainer,  
     [in]  DWORD     dwFlags,  

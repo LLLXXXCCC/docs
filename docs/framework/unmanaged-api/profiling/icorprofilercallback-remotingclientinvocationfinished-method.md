@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ea4b283b-1210-4f41-a7a2-c398b1adde4e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RemotingClientInvocationFinished Method
 Notifies the profiler that a remoting call has run to completion on the client.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RemotingClientInvocationFinished();  
 ```  
   

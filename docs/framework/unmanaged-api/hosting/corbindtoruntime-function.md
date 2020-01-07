@@ -15,17 +15,15 @@ helpviewer_keywords:
 ms.assetid: 799740aa-46ec-4532-95da-6444565b4971
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorBindToRuntime Function
 Enables unmanaged hosts to load the common language runtime (CLR) into a process.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorBindToRuntime (  
     [in]  LPCWSTR     pwszVersion,   
     [in]  LPCWSTR     pwszBuildFlavor,   

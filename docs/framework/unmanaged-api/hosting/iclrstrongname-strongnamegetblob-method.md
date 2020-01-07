@@ -16,15 +16,13 @@ helpviewer_keywords:
 ms.assetid: a24218f8-7196-44be-b7a2-ee9cdd7a85c4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::StrongNameGetBlob Method
 Fills the specified buffer with the binary representation of the executable file at the specified address.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameGetBlob (  
     [in]  LPCWSTR    wszFilePath,  
     [in]  BYTE       *pbBlob,  

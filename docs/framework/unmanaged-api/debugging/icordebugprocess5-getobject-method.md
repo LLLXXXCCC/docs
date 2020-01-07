@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c8111502-5a20-447f-9dc2-76e8acd7ed5a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess5::GetObject Method
 Converts an object address to an "ICorDebugObjectValue" object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObject(  
     [in] CORDB_ADDRESS addr,   
     [out] ICorDebugObjectValue **ppObject  

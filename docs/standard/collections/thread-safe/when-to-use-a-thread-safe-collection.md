@@ -5,11 +5,9 @@ ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "thread-safe collections, when to upgrade"
 ms.assetid: a9babe97-e457-4ff3-b528-a1bc940d5320
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # When to Use a Thread-Safe Collection
-The [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)] introduces five new collection types that are specially designed to support multi-threaded add and remove operations. To achieve thread-safety, these new types use various kinds of efficient locking and lock-free synchronization mechanisms. Synchronization adds overhead to an operation. The amount of overhead depends on the kind of synchronization that is used, the kind of operations that are performed, and other factors such as the number of threads that are trying to concurrently access the collection.  
+The .NET Framework 4 introduces five new collection types that are specially designed to support multi-threaded add and remove operations. To achieve thread-safety, these new types use various kinds of efficient locking and lock-free synchronization mechanisms. Synchronization adds overhead to an operation. The amount of overhead depends on the kind of synchronization that is used, the kind of operations that are performed, and other factors such as the number of threads that are trying to concurrently access the collection.  
   
  In some scenarios, synchronization overhead is negligible and enables the multi-threaded type to perform significantly faster and scale far better than its non-thread-safe equivalent when protected by an external lock. In other scenarios, the overhead can cause the thread-safe type to perform and scale about the same or even more slowly than the externally-locked, non-thread-safe version of the type.  
   

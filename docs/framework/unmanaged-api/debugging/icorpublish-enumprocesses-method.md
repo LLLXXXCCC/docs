@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4ae765f0-93b2-4b6f-aea1-7b0cf44e04a7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublish::EnumProcesses Method
 Gets an enumerator for the managed processes running on this computer.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumProcesses (  
     [in] COR_PUB_ENUMPROCESS       Type,  
     [out] ICorPublishProcessEnum   **ppIEnum  

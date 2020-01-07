@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 53fca564-84b1-44d4-9e21-17a492d2aae7
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::AssemblyUnloadFinished Method
 Notifies the profiler that an assembly has been unloaded.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AssemblyUnloadFinished(  
     [in] AssemblyID assemblyId,  
     [in] HRESULT    hrStatus);  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: be9cab04-65ec-44d5-a39a-f90709fdd043
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugUnmanagedCallback::DebugEvent Method
 Notifies the debugger that a native event has been fired.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DebugEvent (  
     [in] LPDEBUG_EVENT  pDebugEvent,  
     [in] BOOL           fOutOfBand  

@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 7bc3a938-0df1-4739-9ff1-89cff454b704
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_MODULE_FLAGS Enumeration
 Specifies the properties of a module.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum  
 {  
     COR_PRF_MODULE_DISK             = 0x00000001,  

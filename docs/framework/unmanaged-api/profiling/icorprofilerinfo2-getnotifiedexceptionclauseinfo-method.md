@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f9594a7e-cb0c-4c48-accb-29f762aa0c21
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetNotifiedExceptionClauseInfo Method
 Gets the native address and frame information for the exception clause (`catch`/`finally`/`filter`) that is about to be run or has just been run.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNotifiedExceptionClauseInfo(  
     [out] COR_PRF_EX_CLAUSE_INFO *pinfo);  
 ```  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0aa60f24-8bbd-4c83-83c5-86ad191b1d82
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetFunctionInfo2 Method
 Gets the parent class, the metadata token, and the `ClassID` of each type argument, if present, of a function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionInfo2(  
     [in]  FunctionID funcId,  
     [in]  COR_PRF_FRAME_INFO frameInfo,  

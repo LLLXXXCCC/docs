@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 5d798088-7992-48a0-ae55-d2a7ee31913f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # FunctionLeave3 Function
 Notifies the profiler that control is being returned from a function.  
   
 ## Syntax  
   
-```  
+```cpp  
 void __stdcall FunctionLeave3(FunctionOrRemappedID functionOrRemappedID);  
 ```  
   

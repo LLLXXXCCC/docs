@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a31dcaa9-a404-4c1d-8cc7-081827c52935
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::StrongNameGetPublicKey Method
 Gets the public key from a public/private key pair. The key pair can be supplied either as a key container name within a cryptographic service provider (CSP) or as a raw collection of bytes.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StrongNameGetPublicKey (   
     [in]  LPCWSTR   szKeyContainer,  
     [in]  BYTE      *pbKeyBlob,  

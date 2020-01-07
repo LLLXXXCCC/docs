@@ -48,7 +48,7 @@ When using Windows authentication as a security mechanism, the Security Support 
 - Domain Machine: A process with machine identity running on a machine joined to a Windows domain. For example: `MachineName\Network Service`.  
   
 > [!NOTE]
->  The service credential is captured when the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method of the <xref:System.ServiceModel.ServiceHost> class is called. The client credential is read whenever the client sends a message.  
+> The service credential is captured when the <xref:System.ServiceModel.ICommunicationObject.Open%2A> method of the <xref:System.ServiceModel.ServiceHost> class is called. The client credential is read whenever the client sends a message.  
   
 ## Common Windows Authentication Problems  
  This section discusses some common Windows authentication problems and possible remedies.  
@@ -133,7 +133,7 @@ When using Windows authentication as a security mechanism, the Security Support 
  [!code-vb[C_DebuggingWindowsAuth#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_debuggingwindowsauth/vb/source.vb#3)]  
   
 #### SSPI Is Not Available  
- The following operating systems do not support Windows authentication when used as a server: [!INCLUDE[wxp](../../../../includes/wxp-md.md)] Home Edition, [!INCLUDE[wxp](../../../../includes/wxp-md.md)] Media Center Edition, and [!INCLUDE[wv](../../../../includes/wv-md.md)]Home editions.  
+ The following operating systems do not support Windows authentication when used as a server: [!INCLUDE[wxp](../../../../includes/wxp-md.md)] Home Edition, [!INCLUDE[wxp](../../../../includes/wxp-md.md)] Media Center Edition, and Windows Vista Home editions.  
   
 #### Developing and Deploying with Different Identities  
  If you develop your application on one machine, and deploy on another, and use different account types to authenticate on each machine, you may experience different behavior. For example, suppose you develop your application on a Windows XP Pro machine using the `SSPI Negotiated` authentication mode. If you use a local user account to authenticate with, then NTLM protocol will be used. Once the application is developed, you deploy the service to a Windows Server 2003 machine where it runs under a domain account. At this point the client will not be able to authenticate the service because it will be using Kerberos and a domain controller.  

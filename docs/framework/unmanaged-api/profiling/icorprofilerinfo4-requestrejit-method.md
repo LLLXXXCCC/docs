@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 781ed736-f30c-4816-920e-3552e36542c6
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo4::RequestReJIT Method
 Requests a JIT recompilation of all instances of the specified functions.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RequestReJIT (  
    [in] ULONG    cFunctions,  
    [in, size_is(cFunctions)]  ModuleID    moduleIds[],  

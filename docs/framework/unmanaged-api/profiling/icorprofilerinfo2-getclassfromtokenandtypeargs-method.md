@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b25c88f0-71b9-443b-8eea-1c94db0a44b9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetClassFromTokenAndTypeArgs Method
 Gets the `ClassID` of a type by using the specified metadata token and the `ClassID` values of any type arguments.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassFromTokenAndTypeArgs(  
     [in] ModuleID moduleID,  
     [in] mdTypeDef typeDef,  

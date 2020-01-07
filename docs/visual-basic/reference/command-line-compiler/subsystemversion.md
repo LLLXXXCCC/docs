@@ -1,5 +1,5 @@
 ---
-title: "-subsystemversion (Visual Basic)"
+title: "-subsystemversion"
 ms.date: 03/13/2018
 helpviewer_keywords:
   - "/subsystemversion compiler option [Visual Basic]"
@@ -40,7 +40,7 @@ The following table lists common subsystem versions of Windows.
 |Windows Vista|6.00|
 |Windows 7|6.01|
 |Windows Server 2008|6.01|
-|[!INCLUDE[win8](~/includes/win8-md.md)]|6.02|
+|Windows 8|6.02|
 
 ## Default values
 
@@ -54,7 +54,7 @@ The default value of the **-subsystemversion** compiler option depends on the co
 
   - [-platform:arm](../../../visual-basic/reference/command-line-compiler/platform.md)
 
-- The default value is 6.00 if you're using MSBuild, you're targeting [!INCLUDE[net_v45](~/includes/net-v45-md.md)], and you haven't set any of the compiler options that were specified earlier in this list.
+- The default value is 6.00 if you're using MSBuild, you're targeting .NET Framework 4.5, and you haven't set any of the compiler options that were specified earlier in this list.
 
 - The default value is 4.00 if none of the previous conditions is true.
 

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 9e50480a-8ada-4044-b2a5-97bb14ed3525
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::GetHashFromFile Method
 Generates a hash over the contents of the specified file.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHashFromFile (  
     [in]  LPCSTR   szFilePath,  
     [in, out] unsigned int   *piHashAlg,   

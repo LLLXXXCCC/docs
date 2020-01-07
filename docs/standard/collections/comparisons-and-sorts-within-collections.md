@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "Equals method"
   - "collections [.NET Framework], comparisons"
 ms.assetid: 5e4d3b45-97f0-423c-a65f-c492ed40e73b
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Comparisons and Sorts Within Collections
 The <xref:System.Collections> classes perform comparisons in almost all the processes involved in managing collections, whether searching for the element to remove or returning the value of a key-and-value pair.  
@@ -28,7 +26,7 @@ The <xref:System.Collections> classes perform comparisons in almost all the proc
   
 - If type T does not implement <xref:System.IEquatable%601>, <xref:System.Object.Equals%2A?displayProperty=nameWithType> is used.  
   
- In addition, Some constructor overloads for dictionary collections accept an <xref:System.Collections.Generic.IEqualityComparer%601> implementation, which is used to compare keys for equality. For an example, see the <xref:System.Collections.Generic.Dictionary%602.%23ctor%2A?displayProperty=nameWithType> constructor.  
+ In addition, some constructor overloads for dictionary collections accept an <xref:System.Collections.Generic.IEqualityComparer%601> implementation, which is used to compare keys for equality. For an example, see the <xref:System.Collections.Generic.Dictionary%602.%23ctor%2A?displayProperty=nameWithType> constructor.  
   
 <a name="BKMK_Determiningsortorder"></a>   
 ## Determining sort order  

@@ -4,11 +4,9 @@ ms.date: "03/30/2017"
 dev_langs: 
   - "cpp"
 ms.assetid: b3af44ec-7d41-425b-aed9-0c4379e5cbe9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess8::EnableExceptionCallbacksOutsideOfMyCode Method
-[Supported in the [!INCLUDE[net_v46](../../../../includes/net-v46-md.md)] and later versions]  
+[Supported in the .NET Framework 4.6 and later versions]  
   
  Enables or disables certain types of [ICorDebugManagedCallback2](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md) exception callbacks.  
   

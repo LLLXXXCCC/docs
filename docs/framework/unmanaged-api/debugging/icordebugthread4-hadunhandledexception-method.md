@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 05558daa-39e2-4c38-aeaf-e2aec4a09468
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread4::HadUnhandledException Method
 Indicates whether the thread has ever had an unhandled exception.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBlockingObjects (  
     [out] ICorDebugBlockingObjectEnum **ppBlockingObjectEnum  
     );  

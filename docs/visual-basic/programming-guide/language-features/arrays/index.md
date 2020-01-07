@@ -1,5 +1,5 @@
 ---
-title: "Arrays in Visual Basic"
+title: "Arrays"
 ms.date: 12/06/2017
 f1_keywords:
   - "vb.Array"
@@ -27,7 +27,7 @@ Some quick examples before explanation:
 ' Declare a single-dimension array of 5 numbers.
 Dim numbers(4) As Integer
 
-'Declare a single-dimension array and set its 4 values.
+' Declare a single-dimension array and set its 4 values.
 Dim numbers = New Integer() {1, 2, 4, 8}
 
 ' Change the size of an existing array to 16 elements and retain the current values.

@@ -27,7 +27,7 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
  Alternatively, in configuration, the token is enabled by creating a <`customBinding`>, then adding a <`security`> element, and setting the `authenticationMode` attribute to SecureConversation and the `requireSecurityContextCancellation` attribute to `true`.  
   
 > [!NOTE]
->  The preceding requirements are specific. For example, the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> creates a binding element that results in a Windows identity, but does not establish an SCT. Therefore, you can use it with the `Required` option on [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
+> The preceding requirements are specific. For example, the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> creates a binding element that results in a Windows identity, but does not establish an SCT. Therefore, you can use it with the `Required` option on [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
   
 ### Possible ASP.NET Conflict  
  WCF and ASP.NET can both enable or disable impersonation. When ASP.NET hosts an WCF application, a conflict may exist between the WCF and ASP.NET configuration settings. In case of conflict, the WCF setting takes precedence, unless the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property is set to <xref:System.ServiceModel.ImpersonationOption.NotAllowed>, in which case the ASP.NET impersonation setting takes precedence.  
@@ -36,7 +36,7 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
  If the impersonated context does not have access rights to load an assembly and if it is the first time the common language runtime (CLR) is attempting to load the assembly for that AppDomain, the <xref:System.AppDomain> caches the failure. Subsequent attempts to load that assembly (or assemblies) fail, even after reverting the impersonation, and even if the reverted context has access rights to load the assembly. This is because the CLR does not re-attempt the load after the user context is changed. You must restart the application domain to recover from the failure.  
   
 > [!NOTE]
->  The default value for the <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> property of the <xref:System.ServiceModel.Security.WindowsClientCredential> class is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>. In most cases, an identification-level impersonation context has no rights to load any additional assemblies. This is the default value, so this is a very common condition to be aware of. Identification-level impersonation also occurs when the impersonating process does not have the `SeImpersonate` privilege. For more information, see [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
+> The default value for the <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> property of the <xref:System.ServiceModel.Security.WindowsClientCredential> class is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>. In most cases, an identification-level impersonation context has no rights to load any additional assemblies. This is the default value, so this is a very common condition to be aware of. Identification-level impersonation also occurs when the impersonating process does not have the `SeImpersonate` privilege. For more information, see [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md).  
   
 ### Delegation Requires Credential Negotiation  
  To use the Kerberos authentication protocol with delegation, you must implement the Kerberos protocol with credential negotiation (sometimes called multi-leg or multi-step Kerberos). If you implement Kerberos authentication without credential negotiation (sometimes called one-shot or single-leg Kerberos), an exception is thrown. For more information about how to implement credential negotiation, see [Debugging Windows Authentication Errors](../../../../docs/framework/wcf/feature-details/debugging-windows-authentication-errors.md).  
@@ -44,7 +44,7 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
 ## Cryptography  
   
 ### SHA-256 Supported Only for Symmetric Key Usages  
- WCF supports a variety of encryption and signature digest creation algorithms that you can specify using the algorithm suite in the system-provided bindings. For improved security, WCF supports Secure Hash Algorithm (SHA) 2 algorithms, specifically SHA-256, for creating signature digest hashes. This release supports SHA-256 only for symmetric key usages, such as Kerberos keys, and where an X.509 certificate is not used to sign the message. WCF does not support RSA signatures (used in X.509 certificates) using SHA-256 hash due to the current lack of support for RSA-SHA256 in the [!INCLUDE[vstecwinfx](../../../../includes/vstecwinfx-md.md)].  
+ WCF supports a variety of encryption and signature digest creation algorithms that you can specify using the algorithm suite in the system-provided bindings. For improved security, WCF supports Secure Hash Algorithm (SHA) 2 algorithms, specifically SHA-256, for creating signature digest hashes. This release supports SHA-256 only for symmetric key usages, such as Kerberos keys, and where an X.509 certificate is not used to sign the message. WCF does not support RSA signatures (used in X.509 certificates) using SHA-256 hash due to the current lack of support for RSA-SHA256 in the WinFX.  
   
 ### FIPS-Compliant SHA-256 Hashes not Supported  
  WCF does not support SHA-256 FIPS-compliant hashes, so algorithm suites that use SHA-256 are not supported by WCF on systems where use of FIPS compliant algorithms is required.  
@@ -56,7 +56,7 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
  FIPS compliant AES encryption does not work in duplex callbacks under identification level impersonation.  
   
 ### CNG/KSP Certificates  
- *Cryptography API: Next Generation (CNG)* is the long-term replacement for the CryptoAPI. This API is available in unmanaged code on [!INCLUDE[wv](../../../../includes/wv-md.md)],  [!INCLUDE[lserver](../../../../includes/lserver-md.md)] and later Windows versions.  
+ *Cryptography API: Next Generation (CNG)* is the long-term replacement for the CryptoAPI. This API is available in unmanaged code on Windows Vista, Windows Server 2008, and later Windows versions.  
   
  .NET Framework 4.6.1 and earlier versions do not support these certificates because they use the legacy CryptoAPI to handle CNG/KSP certificates. The use of these certificates with   .NET Framework 4.6.1 and earlier versions will cause an exception.  
   

@@ -1,5 +1,5 @@
 ---
-title: "How to: Overload a Procedure that Takes Optional Parameters (Visual Basic)"
+title: "How to: Overload a Procedure that Takes Optional Parameters"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "procedures [Visual Basic], parameters"
@@ -45,7 +45,7 @@ If a procedure has one or more [Optional](../../../../visual-basic/language-refe
   
 #### To overload a procedure that takes more than one optional parameter  
   
-1. Determine which combinations of supplied optional arguments are acceptable to the logic of the procedure. An unacceptable combination might arise if one optional parameter depends on another. For example, if one parameter accepts a spouse's name and another accepts the spouse's age, a combination of arguments supplying the age but omitting the name is unacceptable.  
+1. Determine which combinations of supplied optional arguments are acceptable to the logic of the procedure. An unacceptable combination might arise if one optional parameter depends on another. For example, if one parameter accepts a person's name and another accepts the person's age, a combination of arguments supplying the age but omitting the name is unacceptable.  
   
 2. For each acceptable combination of supplied optional arguments, write a `Sub` or `Function` declaration statement that defines the corresponding parameter list. Do not use the `Optional` keyword.  
   

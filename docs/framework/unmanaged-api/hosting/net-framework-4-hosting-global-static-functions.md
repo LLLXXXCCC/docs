@@ -6,11 +6,9 @@ helpviewer_keywords:
   - "global static functions [.NET Framework hosting], version 4"
   - ".NET Framework 4, hosting global static functions"
 ms.assetid: 07a1a6e1-db73-4555-81df-bc4054c51492
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Framework 4 Hosting Global Static Functions
-The [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)] introduces one new exported method in MSCorEE.dll: [CLRCreateIntstance](../../../../docs/framework/unmanaged-api/hosting/clrcreateinstance-function.md).  
+The .NET Framework 4 introduces one new exported method in MSCorEE.dll: [CLRCreateIntstance](../../../../docs/framework/unmanaged-api/hosting/clrcreateinstance-function.md).  
   
 ## In This Section  
  [CLRCreateInstance Function](../../../../docs/framework/unmanaged-api/hosting/clrcreateinstance-function.md)  

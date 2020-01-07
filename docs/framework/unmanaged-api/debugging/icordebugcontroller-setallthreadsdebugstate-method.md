@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: bdda4bd7-4743-4d58-a22b-8067e967db95
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugController::SetAllThreadsDebugState Method
 Sets the debug state of all managed threads in the process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAllThreadsDebugState (  
     [in] CorDebugThreadState  state,  
     [in] ICorDebugThread      *pExceptThisThread  

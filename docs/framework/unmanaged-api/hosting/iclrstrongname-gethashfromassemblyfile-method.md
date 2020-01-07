@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0b67ea03-d474-4605-acaa-57455790250c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::GetHashFromAssemblyFile Method
 Gets a hash of the specified assembly file, using the specified hash algorithm.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHashFromAssemblyFile (  
     [in]  LPCSTR   szFilePath,  
     [in, out] unsigned int   *piHashAlg,  

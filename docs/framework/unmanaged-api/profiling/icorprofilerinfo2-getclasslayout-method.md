@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a3a36987-5666-4e2f-95b5-d0cb246502ec
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetClassLayout Method
 Gets information about the layout, in memory, of the fields defined by the specified class. That is, this method gets the offsets of the class's fields.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClassLayout(  
     [in]  ClassID classID,  
     [in, out] COR_FIELD_OFFSET rFieldOffset[],  

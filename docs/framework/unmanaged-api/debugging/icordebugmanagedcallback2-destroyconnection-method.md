@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: cf7940e9-4558-4319-925c-09f6c98c8fcd
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback2::DestroyConnection Method
 Notifies the debugger that the specified connection has been terminated.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DestroyConnection (  
     [in] ICorDebugProcess     *pProcess,  
     [in] CONNID               dwConnectionId  

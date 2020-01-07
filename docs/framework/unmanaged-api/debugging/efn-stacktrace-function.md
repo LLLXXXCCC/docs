@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: caea7754-867c-4360-a65c-5ced4408fd9d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# _EFN_StackTrace Function
+# \_EFN\_StackTrace Function
 Provides a text representation of a managed stack trace and an array of `CONTEXT` records, one for each transition between unmanaged and managed code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CALLBACK _EFN_StackTrace(  
     [in]  PDEBUG_CLIENT  Client,  
     [out] WCHAR          wszTextOut[],  
@@ -71,7 +69,7 @@ HRESULT CALLBACK _EFN_StackTrace(
   
 - `wszTextOut` is written in the following format:  
   
-    ```  
+    ```output  
     "<ModuleName>!<Function Name>[+<offset in hex>]  
     ...  
     (TRANSITION)  
@@ -84,7 +82,7 @@ HRESULT CALLBACK _EFN_StackTrace(
   
 - The `Flags` parameter is either 0 or SOS_STACKTRACE_SHOWADDRESSES to see EBP and ESP in front of each `module!functionname` line. By default, it is 0.  
   
-    ```  
+    ```cpp  
     #define SOS_STACKTRACE_SHOWADDRESSES   0x00000001  
     ```  
   

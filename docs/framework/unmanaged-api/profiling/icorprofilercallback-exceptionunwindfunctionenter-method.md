@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ea3dc625-5650-4bf4-8e67-01e42be065b1
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ExceptionUnwindFunctionEnter Method
 Notifies the profiler that the unwind phase of exception handling has begun to unwind a function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionUnwindFunctionEnter(  
     [in] FunctionID functionId);  
 ```  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d69796b4-5b6d-457c-85f6-2cf42e8a8773
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread3::GetActiveInternalFrames Method
 Returns an array of internal frames ([ICorDebugInternalFrame2](../../../../docs/framework/unmanaged-api/debugging/icordebuginternalframe2-interface.md) objects) on the stack.  
   
 ## Syntax  
   
-```  
+```cpp 
 HRESULT GetActiveInternalFrames  
       (  
       [in] ULONG32 cInternalFrames,  

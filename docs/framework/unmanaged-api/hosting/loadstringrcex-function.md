@@ -14,17 +14,15 @@ helpviewer_keywords:
 ms.assetid: bc789636-ca14-4f07-8f77-9305874d7495
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # LoadStringRCEx Function
 Translates an HRESULT value to an appropriate error message for the specified culture.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LoadStringRCEx (  
     [in]  LCID    lcid,   
     [in]  UINT    iResouceID,   

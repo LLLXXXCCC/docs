@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f1f6b8f3-dcfc-49e8-be76-ea50ea90d5a7
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo3::GetModuleInfo2 Method
 Given a module ID, returns the file name of the module, the ID of the module's parent assembly, and a bitmask that describes the properties of the module.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModuleInfo2(  
     [in]  ModuleID   moduleId,  
     [out] LPCBYTE    *ppBaseLoadAddress,  

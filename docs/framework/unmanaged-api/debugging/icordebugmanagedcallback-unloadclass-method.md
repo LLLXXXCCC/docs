@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 66a59b18-ce9a-41f4-b23b-4dd6753d6d36
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::UnloadClass Method
 Notifies the debugger that a class is being unloaded.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnloadClass (  
     [in] ICorDebugAppDomain  *pAppDomain,  
     [in] ICorDebugClass      *c  

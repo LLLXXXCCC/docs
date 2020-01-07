@@ -14,17 +14,15 @@ helpviewer_keywords:
 ms.assetid: ded1e492-a782-4185-9c66-709e421c1782
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorBindToRuntimeByCfg Function
 Loads the common language runtime (CLR) into a process by using version information that is read from an XML file.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorBindToRuntimeByCfg (  
     [in]  IStream     *pCfgStream,  
     [in]  DWORD        reserved,  

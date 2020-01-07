@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ad37cd10-0339-4d08-9b0e-4b3428bb4dc3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishAppDomainEnum::Next Method
 Gets the specified number of application domains that currently exist in the process, starting at the current position.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next (  
     [in] ULONG  celt,  
     [out, size_is(celt), length_is(*pceltFetched)]   

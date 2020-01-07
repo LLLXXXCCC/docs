@@ -2,8 +2,6 @@
 title: ".NET Core and Open-Source"
 ms.date: "03/30/2017"
 ms.assetid: e6bd4655-ce37-4003-8462-468a6fe2c40f
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # .NET Core and Open-Source
 This topic provides a brief overview  of what .NET Core is and shows how you can find more information. To find the complete list of topics for .NET Core, visit the [.NET Core Guide](../../core/index.md).
@@ -12,7 +10,7 @@ This topic provides a brief overview  of what .NET Core is and shows how you can
 ## What is .NET Core?  
  .NET Core is a general purpose, modular, cross-platform and open source implementation of the .NET Standard. It contains many of the same APIs as the .NET Framework (but .NET Core is a smaller set) and includes runtime, framework, compiler and tools components that support a variety of operating systems and chip targets. The .NET Core implementation was primarily driven by the ASP.NET Core workloads but also by the need and desire to have a more modern implementation. It can be used in device, cloud and embedded/IoT scenarios.  
   
- To get started with .NET Core, please visit the [.NET Core homepage](https://www.microsoft.com/net/core).  
+ To get started with .NET Core, visit the .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro).  
   
  Here are the main characteristics of .NET Core:  
   
@@ -41,6 +39,6 @@ This topic provides a brief overview  of what .NET Core is and shows how you can
   
 ## See also
 
-- [.NET Core homepage](https://www.microsoft.com/net/core)
+- [.NET Tutorial - Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)
 - [.NET Core Guide](../../core/index.md)
 - [ASP.NET Core Documentation](/aspnet/core/)

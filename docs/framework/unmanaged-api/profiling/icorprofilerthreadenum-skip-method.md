@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: acb8b029-4a96-4ed7-ae3c-310204e5ceea
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerThreadEnum::Skip Method
 Advances the enumerator's cursor from its current position to skip the specified number of elements.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Skip (    [in] ULONG celt  
 );  
 ```  

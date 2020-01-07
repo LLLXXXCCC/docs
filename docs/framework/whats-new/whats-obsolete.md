@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "what's obsolete [.NET Framework]"
   - "deprecated [.NET Framework]"
 ms.assetid: d356a43a-73df-4ae2-a457-b9628074c7cd
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # What's obsolete in the .NET Framework class library
 
@@ -37,7 +35,7 @@ When you upgrade and recompile existing code, using an obsolete type or member t
 
 - Review the documentation for this technology area to determine how to respond to the deprecation.
 
-You may choose not to recompile existing code against a later version of the .NET Framework. Instead, you can specify the version of the .NET Framework against which your existing compiled code runs. For example, suppose that you have an application named app1.exe that was compiled against the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)], but you want the application to run against the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. This requires the following steps:
+You may choose not to recompile existing code against a later version of the .NET Framework. Instead, you can specify the version of the .NET Framework against which your existing compiled code runs. For example, suppose that you have an application named app1.exe that was compiled against the .NET Framework 3.5, but you want the application to run against the .NET Framework 4.5. This requires the following steps:
 
 1. Create a configuration file for your main executable and name it *appName*.exe.config, where *appName* is the name of the application executable. For the application named app1.exe in our example, you would create a configuration file named app1.exe.config.
 

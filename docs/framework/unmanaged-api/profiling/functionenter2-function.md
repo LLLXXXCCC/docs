@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: ce7a21f9-0ca3-4b92-bc4b-bb803cae3f51
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # FunctionEnter2 Function
 Notifies the profiler that control is being passed to a function and provides information about the stack frame and function arguments. This function supersedes the [FunctionEnter](../../../../docs/framework/unmanaged-api/profiling/functionenter-function.md) function.  
   
 ## Syntax  
   
-```  
+```cpp  
 void __stdcall FunctionEnter2 (  
     [in]  FunctionID                       funcId,   
     [in]  UINT_PTR                         clientData,   

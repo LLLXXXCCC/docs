@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0b933686-226e-4373-92b7-fac579ee7b1a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugType2::GetTypeID Method
 Gets a [COR_TYPEID](../../../../docs/framework/unmanaged-api/debugging/cor-typeid-structure.md) for this type.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeID(  
     ([out] COR_TYPEID *id  
 );  
